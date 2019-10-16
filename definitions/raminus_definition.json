@@ -1,0 +1,24 @@
+[
+    {
+        "networkMode": "bridge", 
+        "name": "ecs-container", 
+        "image": "srimani/raminus-website:2",
+        "cpu": 600, 
+        "logConfiguration": {
+            "logDriver": "awslogs", 
+            "options": {
+                "awslogs-group": "ecs-cloudwatch-log-group", 
+                "awslogs-region": "us-east-1"
+            }
+        }, 
+        "memory": 600, 
+        "portMappings": [
+            {
+                "protocol": "tcp", 
+                "containerPort": 9005,
+                "hostPort": 80
+            }
+        ], 
+        "essential": true
+    }
+]
