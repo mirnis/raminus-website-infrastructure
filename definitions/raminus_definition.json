@@ -2,7 +2,7 @@
     {
         "networkMode": "bridge", 
         "name": "ecs-container", 
-        "image": "srimani/raminus-website:2",
+        "image": "srimani/raminus-website:3",
         "cpu": 600, 
         "logConfiguration": {
             "logDriver": "awslogs", 
